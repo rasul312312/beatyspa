@@ -1,0 +1,1060 @@
+// assets
+@import 'assets/vars'
+@import 'assets/mixins'
+@import 'assets/fonts'
+@import 'assets/base'
+body
+    font-family: "AvenirNextCyr-Regular"
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6
+    font-family: "AvenirNextCyr-Regular"
+header.uk-sticky-fixed
+    background: rgba(0, 0, 0, 0.8)
+    padding: 0
+    z-index: 100
+header
+    z-index: 100
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    padding: 20px 0
+    nav
+        .uk-navbar-nav
+            li.logo
+                margin-right: 30px
+                margin-left: 0
+            li.phone
+                a
+                    font-family: "AvenirNextCyr-Light"
+            .button
+                padding: 10px 0
+                margin-left: 50px
+                margin-right: 0
+            .call-back
+                margin: 0
+                a
+                    text-transform: uppercase
+                    text-decoration: none
+                    height: 30px
+                    padding: 0 20px
+                    display: inline-flex
+                    align-items: center
+                    margin: 5px 0 0 0
+                    background-color: $blue
+                    border-color: $blue
+                    color: #ffffff
+                    font-size: 12px
+                    font-family: "AvenirNextCyr-Medium"
+                    border-radius: 2px
+                    transition: 0.5s
+                    &:hover
+                        background-color: $blueh
+                        border-color: $blueh
+            li
+                margin: 0 20px
+                a
+                    color: #ffffff
+                    font-size: 16px
+                    span.uk-icon
+                        margin-top: 2px
+                    span
+                        display: inline-flex
+                        margin: 0 3px
+
+            li.uk-active
+                a
+                    color: #ffffff
+
+.home-slider
+    .slider-nav
+        .uk-button
+            border-radius: 2px
+            color: #ffffff
+            text-transform: none
+            font-size: 16px
+            transition: 0.5s
+            &:hover
+                background-color: $blue
+                border-color: $blue
+
+    h2
+        font-size: 54px
+        color: #ffffff
+        margin-top: 0
+        margin-bottom: 40px
+        padding-bottom: 40px
+        border-bottom: 1px solid #95979d
+    p
+        margin-bottom: 40px
+        margin-top: 0
+        font-size: 16px
+        font-family: "AvenirNextCyr-Light"
+        color: #ffffff
+    .arrow-left
+        position: absolute
+        left: 1%
+        top: 50%
+        z-index: 10
+        width: 50px
+        height: 50px
+        background: #ffffff
+        line-height: 48px
+        text-align: center
+        border-radius: 50%
+        cursor: pointer
+        transition: 0.3s
+        transform: translateY(-50%)
+        &:hover
+            transform: scale(1.2) translateY(-50%)
+    .arrow-right
+        position: absolute
+        right: 1%
+        top: 50%
+        z-index: 10
+        width: 50px
+        height: 50px
+        background: #ffffff
+        line-height: 48px
+        text-align: center
+        border-radius: 50%
+        cursor: pointer
+        transition: 0.3s
+        transform: translateY(-50%)
+        &:hover
+            transform: scale(1.2) translateY(-50%)
+    .slider-for
+        
+        div
+            height: 768px
+    .slider-nav
+        background-image: url(../img/jpg/slider-cover.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        align-items: center
+        display: flex
+        div
+            outline: none !important
+        .slick-track
+            display: flex
+            align-items: center
+        .text
+            outline: none !important
+            padding-right: 100px
+            position: relative
+            .uk-position-relative
+                padding-left: 60px
+    .slick-dots
+        position: absolute
+        left: 10%
+        top: 50%
+        padding: 0
+        margin: 0
+        transform: translateY(-50%)
+        li
+            list-style: none
+            button
+                width: 15px
+                height: 15px
+                background-color: #fff
+                border-radius: 50%
+                font-size: 0
+                outline: none !important
+                border: 0
+                transition: 0.5s
+                position: relative
+                cursor: pointer
+                &:before
+                    position: absolute
+                    content: ''
+                    top: 0
+                    bottom: 0
+                    right: 0
+                    left: 0
+                    background: rgba(255, 255, 255, 0.5)
+                    transform: scale(1)
+                    transition: 0.5s
+                    border-radius: 50%
+                &:hover
+                    transform: scale(0.5)
+                    &:before
+                        transform: scale(2.5)
+        li.slick-active
+            button
+                transform: scale(0.5)
+                &:before
+                    transform: scale(2.5)
+section.sponsor
+    padding: 30px 0
+section.step
+    border-top: 1px solid #e7e7e7
+   
+    background: #f9f9f7
+    .item
+        padding: 100px 30px 60px
+        position: relative
+        text-align: center
+        border-right: 1px solid #e7e7e7
+        transition: 0.5s
+        border-bottom: 1px solid #e7e7e7
+        span
+            position: absolute
+            left: 50%
+            top: 0
+            transform: translateX(-50%)
+            font-size: 130px
+            font-family: "AvenirNextCyr-Bold"
+            color: #e4e4e5
+            transition: 0.5s
+        .image-wraper
+            width: 170px
+            height: 120px
+            overflow: hidden
+            border-radius: 5px
+            border: 4px solid #e2e0d5
+            margin: 0 auto
+            transition: 0.5s
+            img
+        h3
+            font-size: 21px
+            color: #000000
+            margin: 30px auto
+        .uk-button
+            background-color: $blue
+            border-color: $blue
+            color: #ffffff
+            border-radius: 2px
+            text-transform: none
+            font-size: 16px
+            font-family: "AvenirNextCyr-Light"
+            transition: 0.5s
+            position: absolute
+            bottom: 20px
+            left: 50%
+            transform: translateX(-50%) scale(0)
+            opacity: 0
+            &:hover
+                background-color: $blueh
+                border-color: $blueh
+    .item:hover
+        background-color: #fff
+        span
+            color: $blue
+        .image-wraper
+            border: 4px solid $blue
+        .uk-button
+            opacity:  1
+            transform: translateX(-50%) scale(1)
+section.about_us
+    padding: 100px 0
+    h3
+        font-size: 48px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+        text-align: center
+        margin-top: 0
+        margin-bottom: 60px
+    .item
+        .image-wrapper
+            width: 120px
+            height: 120px
+            display: inline-flex
+            border-radius: 50%
+            overflow: hidden
+            box-shadow: 0px 15px 57px -18px rgba(42,45,69,0.62)
+        .text
+            padding-left: 30px
+section.banner-call-back
+    padding: 60px 0
+    background-attachment: fixed
+    .item
+        background: rgba(0, 0, 0, 0.4)
+        border-radius: 50%
+        width: 400px
+        height: 400px
+        padding: 20px
+        h3
+            font-size: 24px
+            color: #ffffff
+            margin: 30px 0 50px 0
+        .uk-button
+            font-size: 18px
+            text-transform: none
+            color: #ffffff
+            background-color: $blue
+            border-color: $blue
+            transition: 0.5s
+            line-height: 50px
+            font-family: "AvenirNextCyr-Demi"
+            &:hover
+                background-color: $blueh
+                border-color: $blueh
+section.action
+    padding: 100px 0
+    .small-action-block:hover
+        background-color: #fff
+        h4
+            color: $blue
+    .small-action-block
+        background: $blue
+        border: 10px solid $blue
+        border-radius: 50%
+        width: 240px
+        height: 240px
+        padding: 30px
+        transition: 0.5s
+        h3
+            font-size: 36px
+            color: #e30d8b
+            text-transform: uppercase
+            font-family: "AvenirNextCyr-Bold"
+        h4
+            font-size: 21px
+            color: #ffffff
+            text-transform: uppercase
+            margin-top: 20px
+            font-family: "AvenirNextCyr-Medium"
+            transition: 0.5s
+    .medium-action-block:hover
+        background-color: $blue
+        border: 10px solid #ffffff
+        h5, p, .uk-countdown-number, .uk-countdown-separator
+            color: #ffffff
+    .medium-action-block
+        padding: 30px
+        width: 360px
+        height: 360px
+        border-radius: 50%
+        background: #ffffff
+        border: 10px solid $blue
+        margin-top: 150px
+        margin-left: -150px
+        transition: 0.5s
+        p
+            color: $blue
+            font-family: "AvenirNextCyr-Bold"
+            font-size: 24px
+            transition: 0.5s
+            
+            span
+                color: #e30d8b
+        h5
+            font-size: 18px
+            font-family: "AvenirNextCyr-Demi"
+            transition: 0.5s
+        .uk-countdown-number
+            font-size: 2rem
+            transition: 0.5s
+            color: $blue
+            font-family: "AvenirNextCyr-Bold"
+        .uk-countdown-separator
+            font-size: 14px
+        .uk-countdown-number, .uk-countdown-separator
+            line-height: 10px
+    form:hover
+        background: rgba(255, 255, 255, 1)
+        .uk-input
+            border: 1px solid #eeeeee
+    form
+        margin-top: 100px
+        padding: 30px
+        background: rgba(255, 255, 255, 0.5)
+        border-radius: 5px
+        transition: 0.5s
+        .uk-legend
+            font-size: 18px
+            text-transform: uppercase
+            color: $blue
+            font-family: "AvenirNextCyr-Demi"
+        .uk-input
+            border-radius: 2px
+            border: 1px solid #ffffff
+        p
+            padding-left: 20px
+            background-image: url(../img/png/lock.png)
+            background-repeat: no-repeat
+            background-position: left center
+            font-size: 11px
+        .uk-button
+            width: 100%
+            background-color: $blue
+            border-color: $blue
+            color: #ffffff
+            transition: 0.5s
+            border-radius: 2px
+            &:hover
+                background-color: $blueh
+                border-color: $blueh
+section.specialists
+    padding: 100px 0
+    h3
+        font-size: 48px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+        text-align: center
+        margin-top: 0
+        margin-bottom: 60px
+    .image-wrapper
+        height: 300px
+    h6
+        margin: 0
+        font-size: 14px
+        font-family: "AvenirNextCyr-Demi"
+        color: $blue
+    h5
+        margin: 0
+        font-size: 20px
+        font-family: "AvenirNextCyr-Demi"
+        color: $blue
+    .text-block
+        padding: 20px
+        transition: 0.5s
+    .item:hover
+        .text-block
+            background-color: #f9f9f9
+    a
+        z-index: 1
+        border-radius: 2px
+        text-transform: none
+section.guests
+    background-color: #f5f6f6
+    padding: 100px 0
+    position: relative
+    overflow: hidden
+    &:before
+        position: absolute
+        top: 0
+        right: 0
+        width: 400px
+        height: 300px
+        background-image: url(../img/png/tr.png)
+        background-position: right top
+        background-repeat: no-repeat
+        content: ''
+        background-size: cover
+        animation: float_top 2.5s ease infinite
+        transform-origin: 50% 50%
+    &:after
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 400px
+        height: 300px
+        background-image: url(../img/png/bl.png)
+        background-position: right top
+        background-repeat: no-repeat
+        content: ''
+        background-size: cover
+        animation: float_bot 3s ease infinite
+        transform-origin: 50% 50%
+    h3
+        font-size: 48px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+        text-align: center
+        margin-top: 0
+        margin-bottom: 0
+    ul.uk-subnav
+        li
+            padding: 0
+            &:before
+                position: absolute
+                bottom: -30px
+                left: 50%
+                transform: translateX(-50%)
+                content: ''
+                width: 0
+                height: 0
+                border-style: solid
+                border-width: 0 20px 20px 20px
+                border-color: transparent transparent #ffffff transparent
+                opacity: 0
+                transition: 0.5s
+            a
+                width: 100px
+                height: 100px
+                border-radius: 50%
+                padding: 10px
+                margin: 0 auto
+                box-shadow: 0 15px 57px -18px rgba(42,45,69,.62)
+                overflow: hidden
+                z-index: 2
+        li.uk-active
+            &:before
+                opacity: 1
+            a
+                background-color: #fff
+               
+    ul.uk-switcher
+        margin: 30px 0
+        background-color: #fff
+        text-align: center
+        padding: 30px
+        b
+            color: $blue
+            font-family: "AvenirNextCyr-Demi"
+            font-size: 18px
+        p
+            background-image: url(../img/png/com.png)
+            background-repeat: no-repeat
+            background-position: bottom center
+            padding-bottom: 50px
+            font-size: 14px
+section.spa-kitchen, section.cosmetic-boutique
+    position: relative
+    .bg-image
+        position: absolute
+        width: 50%
+        height: 100%
+        bottom: 0
+        left: 0
+        top: 0
+        background-repeat: no-repeat
+        background-size: cover
+    h3
+        font-size: 45px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+        margin-top: 0
+        margin-bottom: 0
+    h4
+        font-size: 24px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+    .item
+        padding: 40px
+    .uk-button
+        font-size: 16px
+        text-transform: none
+        color: #ffffff
+        background-color: $blue
+        border-color: $blue
+        transition: 0.5s
+        line-height: 50px
+        font-family: "AvenirNextCyr-Demi"
+        border-radius: 2px
+        &:hover
+            background-color: $blueh
+            border-color: $blueh
+section.cosmetic-boutique
+    .bg-image
+        right: 0
+        left: inherit
+        background-color: #f9f9f7
+    .bg-image > .uk-flex
+        height: 100%
+    .slick-slide
+        outline: none !important
+    .image
+        height: 300px
+        outline: none !important
+        img
+            width: auto
+            height: 100%
+            margin:  auto
+    .text
+        text-align: center
+        h3
+            font-size: 36px
+            color: $blue
+        p
+    .slick-dots
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        li
+            list-style: none
+            display: inline-flex
+            margin: 0 5px
+            button
+                border: 0
+                font-size: 0
+                background: #e9e9e8
+                width: 40px
+                height: 3px
+                outline: none !important
+                cursor: pointer
+                transition: 0.5s
+        li.slick-active
+            button
+                background: $blue
+
+    .cosmetic-boutique-slider
+        height: 100%
+        display: flex !important
+    .arrow-left
+        position: absolute
+        left: 1%
+        top: 50%    
+        z-index: 10
+        width: 50px
+        height: 50px
+        background: #ffffff
+        line-height: 48px
+        text-align: center
+        border-radius: 50%
+        cursor: pointer
+        transition: 0.3s
+        transform: translateY(-50%)
+        &:hover
+            transform: scale(1.2) translateY(-50%)
+    .arrow-right
+        position: absolute
+        right: 1%
+        top: 50%
+        z-index: 10
+        width: 50px
+        height: 50px
+        background: #ffffff
+        line-height: 48px
+        text-align: center
+        border-radius: 50%
+        cursor: pointer
+        transition: 0.3s
+        transform: translateY(-50%)
+        &:hover
+            transform: scale(1.2) translateY(-50%)
+section.gift_certificates
+    padding: 100px 0
+    background-image: url(../img/jpg/superbg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    h4
+        font-size: 36px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+        margin-top: 0
+    p
+        font-size: 18px
+    .uk-button
+        font-size: 16px
+        text-transform: none
+        color: #ffffff
+        background-color: $blue
+        border-color: $blue
+        transition: 0.5s
+        line-height: 50px
+        font-family: "AvenirNextCyr-Demi"
+        border-radius: 2px
+        &:hover
+            background-color: $blueh
+            border-color: $blueh
+section.gallery
+    padding: 100px 0
+    h3
+        font-size: 45px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+        margin-top: 0
+        margin-bottom: 0
+    .controls
+        button.active
+            color: $blue
+            font-family: "AvenirNextCyr-Bold"
+        button
+            font-size: 18px
+            color: #777777
+            background: transparent
+            outline: none !important
+            border: 0
+            cursor: pointer
+            font-family: "AvenirNextCyr-Regular"
+            transition: 0.5s
+            padding: 10px 20px
+    .gallery-content
+        .mix
+            display: none
+        .item
+            cursor: pointer
+            img
+                transition: 0.5s
+            &:hover
+                img
+                    opacity: 0.5
+section.call-back-block
+    background-color: #f5f6f6
+    padding: 100px 0
+    h3
+        font-size: 45px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+        margin-top: 0
+        margin-bottom: 50px
+        text-align: center
+    span.req
+        color: red
+        display: inline-flex
+        margin-left: 5px
+    label
+        font-size: 16px
+        font-family: "AvenirNextCyr-Regular"
+        color: $blue
+        display: flex
+        margin-bottom: 5px
+        cursor: pointer
+        align-items: center
+    .uk-input
+        border-radius: 2px
+        border: 1px solid #b8bbc0
+        height: 45px
+    .uk-checkbox:checked, .uk-checkbox:indeterminate, .uk-radio:checked
+        background-color: $blue
+    .uk-checkbox:focus, .uk-radio:focus
+        border-color: $blue
+    .uk-button
+        font-size: 16px
+        text-transform: none
+        color: #ffffff
+        background-color: $blue
+        border-color: $blue
+        transition: 0.5s
+        line-height: 50px
+        font-family: "AvenirNextCyr-Demi"
+        border-radius: 2px
+        &:hover
+            background-color: $blueh
+            border-color: $blueh
+footer
+    padding: 100px 0 60px 0
+    background-color: #7a7d84
+    h5
+        font-size: 15px
+        text-transform: uppercase
+        color: #ffffff
+        font-family: "AvenirNextCyr-Demi"
+    ul
+        padding: 0
+        margin: 0
+        li
+            list-style: none
+            font-size: 14px
+            font-family: "AvenirNextCyr-Regular"
+            color: #ffffff
+            a
+                font-size: 14px
+                text-decoration: none
+                display: flex
+                transition: 0.5s
+                color: #ffffff
+                text-decoration: none
+                font-family: "AvenirNextCyr-Regular"
+                padding: 5px 0
+                &:hover
+                    color: $blue
+    p
+        color: #cccccc
+section.banner-top
+    position: relative
+    padding: 130px 0 200px 0
+    &:before
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        content: ''
+        background: rgba(42, 45, 69, 0.7)
+        z-index: 1
+        display: flex
+    a
+        color: #ffffff !important
+    span
+        color: #ffffff !important
+        border-bottom: 1px solid #ffffff
+    .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column):before
+        margin: 0 10px
+    .uk-breadcrumb
+        margin-bottom: 10px
+section.banner-top > div
+    z-index: 2
+    position: relative
+    h1
+        color: #ffffff
+        z-index: 2
+        margin: 0
+    p
+        margin-top: 30px
+        padding-top: 30px
+        border-top: 1px solid #e5e5e51f
+        color: #ffffff
+    span
+        color: #ffffff
+    b
+        color: #ffffff
+    a
+        background-color: transparent !important
+        text-decoration: none
+        transition: 0.5s
+        border: 1px solid transparent
+        &:hover
+            border: 1px solid #fff
+    .uk-button
+        border: 1px solid #ffffff
+        &:hover
+            background-color: $blueh !important
+            color: #ffffff
+            border-color: $blueh
+section.news_inner
+    padding: 100px 0
+    .left-side
+        p
+            color: #000000
+            font-size: 18px
+            font-family: "AvenirNextCyr-Light"
+            margin-bottom: 5px
+        strong
+            font-family: "AvenirNextCyr-Demi"
+            font-size: 16px
+        .fa-eye
+            margin-right: 5px
+    .right-side
+        p
+            color: #000000
+        h3
+            font-family: "AvenirNextCyr-Demi" !important
+            a
+                font-size: 18px
+                display: inline-flex
+                margin-left: 12px
+                color: $blue
+                font-family: "AvenirNextCyr-Light"
+
+        .slider_news_block
+            padding: 10px 0
+            .uk-slider-items
+                padding: 20px
+            .image
+                height: 250px
+            .item
+                margin: 0 20px
+                padding: 0 0 30px 0
+                outline: none !important
+            span
+                color: #7a7d84
+                font-size: 16px
+                font-family: "AvenirNextCyr-Demi"
+            h4
+                margin: 0
+                font-size: 24px
+                font-family: "AvenirNextCyr-Demi"
+                line-height: 24px
+                margin: 10px 0
+            a
+                z-index: 2
+            .arrow-left
+                position: absolute
+                left: 1%
+                top: 50%    
+                z-index: 10
+                width: 50px
+                height: 50px
+                background: #ffffff
+                line-height: 48px
+                text-align: center
+                border-radius: 50%
+                cursor: pointer
+                transition: 0.3s
+                transform: translateY(-50%)
+                border: 1px solid #cccccc
+                &:hover
+                    transform: scale(1.2) translateY(-50%)
+            .arrow-right
+                position: absolute
+                right: 1%
+                top: 50%
+                z-index: 10
+                width: 50px
+                height: 50px
+                background: #ffffff
+                line-height: 48px
+                text-align: center
+                border-radius: 50%
+                cursor: pointer
+                transition: 0.3s
+                transform: translateY(-50%)
+                border: 1px solid #cccccc
+                &:hover
+                    transform: scale(1.2) translateY(-50%)
+section.bootick
+    padding: 100px 0
+    .controll
+        .active
+            color: #000000
+            margin-right: 20px
+        a
+            color: #777777
+            margin: 0 5px
+    b
+        margin-left: 5px
+    .uk-grid
+        .item
+            .uk-card
+                padding: 40px 0 0 0
+            .image
+                height: 150px
+                width: 240px
+                margin: 0 auto
+                text-align: center
+                img
+                    width: auto
+                    height: 100%
+            h3
+                font-size: 14px
+                color: #bebebe
+                text-transform: uppercase
+                margin: 0
+            h4
+                margin: 10px 0
+                font-size: 16px
+                color: #1a1a1a
+            strong
+                display: flex
+                margin: 10px 0 20px 0
+                justify-content: center
+            .uk-button
+                font-size: 16px
+                text-transform: none
+                color: #ffffff
+                background-color: $blue
+                border-color: $blue
+                transition: 0.5s
+                line-height: 40px
+                font-family: "AvenirNextCyr-Demi"
+                border-radius: 2px
+                &:hover
+                    background-color: $blueh
+                    border-color: $blueh
+    .see-more
+        a
+            display: inline-flex
+            align-items: center
+            transition: 0.5s
+            &:hover
+                background-color: $blue
+                border-color: $blue
+                color: #ffffff
+        span.icon
+            margin-right: 5px
+section.license
+    padding: 100px 0
+    .item
+        padding: 20px
+        border: 1px solid #e5e5e5
+section.idea
+    padding: 100px 0
+    .image
+        border-radius: 50%
+        width: 150px
+        height: 150px
+        overflow: hidden
+        margin: 0 auto
+        position: relative
+        box-shadow: 0 15px 57px -18px rgba(42,45,69,.62)
+    h3
+        font-size: 48px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+        text-align: center
+        margin-top: 0
+        margin-bottom: 60px
+section.principles
+    background-color: #f5f6f6
+    padding: 100px 0
+    position: relative
+    overflow: hidden
+    h3
+        font-size: 32px
+        color: $blue
+        font-family: "AvenirNextCyr-Demi"
+        text-align: left
+        margin-top: 0
+        margin-bottom: 60px
+    &:before
+        position: absolute
+        top: 0
+        right: 0
+        width: 400px
+        height: 300px
+        background-image: url(../img/png/tr.png)
+        background-position: right top
+        background-repeat: no-repeat
+        content: ''
+        background-size: cover
+        animation: float_top 2.5s ease infinite
+        transform-origin: 50% 50%
+    &:after
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 400px
+        height: 300px
+        background-image: url(../img/png/bl.png)
+        background-position: right top
+        background-repeat: no-repeat
+        content: ''
+        background-size: cover
+        animation: float_bot 3s ease infinite
+        transform-origin: 50% 50%
+    .principles-slider
+        padding: 0 80px
+        .slick-slide
+            outline: none !important
+        .image
+            width: 150px
+            height: 150px
+            overflow: hidden
+            border-radius: 50%
+            box-shadow: 0 15px 57px -18px rgba(42,45,69,.62)
+            margin-top: 60px;
+            margin-bottom: 20px;
+        .arrow-left
+            position: absolute
+            left: 1%
+            top: 50%    
+            z-index: 10
+            width: 50px
+            height: 50px
+            background: #ffffff
+            line-height: 48px
+            text-align: center
+            border-radius: 50%
+            cursor: pointer
+            transition: 0.3s
+            transform: translateY(-50%)
+            border: 1px solid #cccccc
+            &:hover
+                transform: scale(1.2) translateY(-50%)
+        .arrow-right
+            position: absolute
+            right: 1%
+            top: 50%
+            z-index: 10
+            width: 50px
+            height: 50px
+            background: #ffffff
+            line-height: 48px
+            text-align: center
+            border-radius: 50%
+            cursor: pointer
+            transition: 0.3s
+            transform: translateY(-50%)
+            border: 1px solid #cccccc
+            &:hover
+                transform: scale(1.2) translateY(-50%)
+        span.number
+            position: absolute;
+            font-size: 130px;
+            font-family: AvenirNextCyr-Bold;
+            color: #e4e4e5;
+            transition: .5s;
+            line-height: 130px
+        h4
+            font-size: 24px
+            color: $blue
+            margin-top: 0
+            margin-bottom: 20px
+            font-family: "AvenirNextCyr-Demi"
+        p
+            margin: 0
+@import 'assets/media'

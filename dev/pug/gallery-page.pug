@@ -1,0 +1,57 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		.uk-offcanvas-content
+			include ../components/header.pug
+			section.banner-top(class="uk-background-cover uk-text-center uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/jpg/gal.jpg);")
+				div
+					ul.uk-breadcrumb
+						li
+							a(href='') название страницы
+						li
+							a(href='') название страницы
+						li
+							span название страницы
+					h1 Галерея Beauty SPA
+			section.gallery
+				.uk-container
+					.uk-flex.uk-flex-middle.uk-margin-medium-bottom(class="uk-flex-between@m")
+						.controls.uk-flex
+							button.filter(data-filter='all') Все фото
+							button.filter(data-filter='.category-1') Интерьер
+							button.filter(data-filter='.category-2') Мир Beauty Spa
+							button.filter(data-filter='.category-3') Продукция
+							button.filter(data-filter='.category-4') Стиль жизни
+					.gallery-content.uk-grid.uk-grid-collapse(class="uk-child-width-1-5@l uk-child-width-1-4@m uk-child-width-1-3@s uk-child-width-1-2" uk-grid uk-lightbox="animation: slide" )
+						.mix.category-1
+							.item.uk-cover-container.uk-height-small(data-src="img/jpg/m1.jpg")
+								img(src="img/jpg/m1.jpg", alt="", uk-cover)
+						.mix.category-1
+							.item.uk-cover-container.uk-height-small(data-src="img/jpg/m2.jpg")
+								img(src="img/jpg/m2.jpg", alt="", uk-cover)
+						.mix.category-2
+							.item.uk-cover-container.uk-height-small(data-src="img/jpg/m3.jpg")
+								img(src="img/jpg/m3.jpg", alt="", uk-cover)
+						.mix.category-2
+							.item.uk-cover-container.uk-height-small(data-src="img/jpg/m4.jpg")
+								img(src="img/jpg/m4.jpg", alt="", uk-cover)
+						.mix.category-3
+							.item.uk-cover-container.uk-height-small(data-src="img/jpg/m1.jpg")
+								img(src="img/jpg/m1.jpg", alt="", uk-cover)
+						.mix.category-3
+							.item.uk-cover-container.uk-height-small(data-src="img/jpg/m2.jpg")
+								img(src="img/jpg/m2.jpg", alt="", uk-cover)
+						.mix.category-4
+							.item.uk-cover-container.uk-height-small(data-src="img/jpg/m1.jpg")
+								img(src="img/jpg/m1.jpg", alt="", uk-cover)
+						.mix.category-4
+							.item.uk-cover-container.uk-height-small(data-src="img/jpg/m2.jpg")
+								img(src="img/jpg/m2.jpg", alt="", uk-cover)
+									
+			//- Твой код тут
+			include ../components/footer.pug
+		include assets/_scripts.pug

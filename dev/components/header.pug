@@ -1,0 +1,72 @@
+header(uk-sticky="top: 100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up")
+    .uk-container
+        nav.uk-navbar(uk-navbar='')
+            .uk-navbar-left
+                ul.uk-navbar-nav
+                    li.logo
+                        a(href='#')
+                            img(src="img/png/logo.png", alt="")
+            .uk-navbar-right
+                ul.uk-navbar-nav
+                    li.uk-active
+                        a(href='#toggle-header' uk-toggle)
+                            span(uk-icon='icon: menu')
+                            span меню
+                    li(class="uk-visible@l")
+                        a(href='#') О SPA центре
+                    li(class="uk-visible@l")
+                        a(href='#') Услуги
+                    li(class="uk-visible@l")
+                        a(href='#') spa сертификаты
+                    li.uk-text-center.button(class="uk-visible@m")
+                        div
+                            a(href="tel: +996 (555) 310 320") +996 (555) 310 320
+                        div.call-back
+                            a(href="").uk-button-default Записаться онлайн
+        #toggle-header(uk-offcanvas="mode: push; overlay: true")
+            .uk-offcanvas-bar
+                button.uk-offcanvas-close(type='button', uk-close='')
+                h5 Наш телефон
+                ul.uk-nav.uk-nav-default
+                    li
+                        a(href="tel: +996 (555) 310 320") +996 (555) 310 320
+                h5 О SPA центре
+                ul.uk-nav.uk-nav-default
+                    li
+                        a(href="") О нас
+                    li
+                        a(href="") Галерея
+                    li
+                        a(href="") Этикет
+                    li
+                        a(href="") События и новости
+                    li
+                        a(href="") Публикации и пресса
+                    li
+                        a(href="") Наши партнеры
+                    li
+                        a(href="") Отзывы
+                    li
+                        a(href="") Лицензия
+                    li
+                        a(href="") Правовая информация
+                h5 Услуги
+                ul.uk-nav.uk-nav-default
+                    li
+                        a(href="") Диагностика и консультации
+                    li
+                        a(href="") SPA –уходы за телом
+                    li
+                        a(href="") Косметология и эстетическая медицина
+                    li
+                        a(href="") Art&Beauty студия
+                h5 Другие разделы
+                ul.uk-nav.uk-nav-default
+                    li
+                        a(href="") Косметический бутик
+                    li
+                        a(href="") Спецпредложения
+                    li
+                        a(href="") SPA -сертификаты
+                    li
+                        a(href="") SPA- кухня

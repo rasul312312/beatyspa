@@ -1,0 +1,106 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		.uk-offcanvas-content
+			include ../components/header.pug
+			section.banner-top(class="uk-background-cover uk-text-center uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/jpg/bot.jpg);")
+				div
+					ul.uk-breadcrumb
+						li
+							a(href='') название страницы
+						li
+							a(href='') название страницы
+						li
+							span название страницы
+					h1 Косметический бутик 
+			section.bootick
+				.uk-container
+					.uk-flex.uk-margin-medium-bottom(class="uk-flex-around uk-flex-between@m uk-flex-middle")
+						div.controll
+							a(href="").active Вся продукиця
+							a(href="") Thalion
+							a(href="") Salin de Biosel
+							a(href="") Comfort Zone
+							a(href="") Cipirica
+							a(href="") Gehwol
+						div
+							span Более
+								b 140 продукции
+					.uk-grid.uk-grid-small(uk-grid class="uk-child-width-1-4@m uk-child-width-1-2@s " uk-height-match="target: > div > div > div > div > h4")
+						div
+							.item
+								.uk-card.uk-card-default.uk-box-shadow-hover-large
+									.uk-card-media-top
+										.image
+											img(src='img/png/tovar.png', alt='')
+									.uk-card-body.uk-text-center
+										h3.uk-card-brand Thalion
+										h4.uk-card-title Крем для загара Крем для загара Крем для загара
+										strong 1500 сом
+										a(href="").uk-button.uk-button-default Подробнее
+						div
+							.item
+								.uk-card.uk-card-default.uk-box-shadow-hover-large
+									.uk-card-media-top
+										.image
+											img(src='img/png/tovar.png', alt='')
+									.uk-card-body.uk-text-center
+										h3.uk-card-brand Thalion
+										h4.uk-card-title Крем для загара
+										strong 1500 сом
+										a(href="").uk-button.uk-button-default Подробнее
+						div
+							.item
+								.uk-card.uk-card-default.uk-box-shadow-hover-large
+									.uk-card-media-top
+										.image
+											img(src='img/png/tovar.png', alt='')
+									.uk-card-body.uk-text-center
+										h3.uk-card-brand Thalion
+										h4.uk-card-title Крем для загара
+										strong 1500 сом
+										a(href="").uk-button.uk-button-default Подробнее
+						div
+							.item
+								.uk-card.uk-card-default.uk-box-shadow-hover-large
+									.uk-card-media-top
+										.image
+											img(src='img/png/tovar.png', alt='')
+									.uk-card-body.uk-text-center
+										h3.uk-card-brand Thalion
+										h4.uk-card-title Крем для загара
+										strong 1500 сом
+										a(href="").uk-button.uk-button-default Подробнее
+						div
+							.item
+								.uk-card.uk-card-default.uk-box-shadow-hover-large
+									.uk-card-media-top
+										.image
+											img(src='img/png/tovar.png', alt='')
+									.uk-card-body.uk-text-center
+										h3.uk-card-brand Thalion
+										h4.uk-card-title Крем для загара
+										strong 1500 сом
+										a(href="").uk-button.uk-button-default Подробнее
+						div
+							.item
+								.uk-card.uk-card-default.uk-box-shadow-hover-large
+									.uk-card-media-top
+										.image
+											img(src='img/png/tovar.png', alt='')
+									.uk-card-body.uk-text-center
+										h3.uk-card-brand Thalion
+										h4.uk-card-title Крем для загара
+										strong 1500 сом
+										a(href="").uk-button.uk-button-default Подробнее
+					.uk-margin-medium.uk-text-center.see-more
+						a(href="").uk-button.uk-button-default
+							span.icon(uk-icon='icon: refresh')
+							span Загрузить еще
+			//- Твой код тут 
+			include ../components/footer.pug
+		include assets/_scripts.pug

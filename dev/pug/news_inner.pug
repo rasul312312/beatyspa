@@ -1,0 +1,78 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		.uk-offcanvas-content
+			include ../components/header.pug
+			section.banner-top(class="uk-background-cover uk-text-center uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/jpg/news.jpg);")
+				div
+					ul.uk-breadcrumb
+						li
+							a(href='') название страницы
+						li
+							a(href='') название страницы
+						li
+							span название страницы
+					h1 Оборудование для салонов SPA
+			section.news_inner
+				.uk-container
+					.uk-grid(class="uk-grid" uk-grid)
+						div(class="uk-width-1-4@m left-side")
+							.uk-margin
+								p Дата публикации
+								strong 24 октября 2018 г
+							.uk-margin
+								p Просмотров
+								strong
+									i.fa.fa-eye(aria-hidden='true')
+									span 145
+							.uk-margin
+								p Подделиться с друзьями
+								a.uk-icon-button.uk-margin-small-right(href='')
+									i.fa.fa-facebook(aria-hidden='true')
+								a.uk-icon-button.uk-margin-small-right(href='')
+									i.fa.fa-twitter(aria-hidden='true')
+						div(class="uk-width-expand@m right-side")
+							.text-block
+								p Без них невозможно представить жизнь современного СПА. От качества, функциональности, удобства и дизайнерского решения оборудования во многом зависит успех салона красоты и СПА-центра. Поэтому к выбору оборудования нужно отнестись ответственно.
+								p Во-первых, необходимо поинтересоваться у продавца о наличии у него необходимых сертификатов на оборудование, так как многие фирмы завозят нелегально оборудование, не имея на него сертификатов, и у покупателя в дальнейшем возникают проблемы с проверяющими организациями, вплоть до запрещения эксплуатации оборудования без соответствующих сертификатов
+								p Во-вторых, необходимо узнать, является ли приобретаемое оборудование профессиональным. Профессиональное оборудование для салонов красоты и СПА отличается от бытового более качественными деталями и узлами, которые подвержены максимальным нагрузкам, и позволяет длительное время эксплуатировать оборудование с повышенными нагрузками. Например, бытовая гидромассажная ванна рассчитана на редкое использование 3-4 раза в неделю, профессиональная гидромассажная ванна рассчитана на полный 8-часовой рабочий день, в течение нескольких лет. Это, кстати, и объясняет ее высокую стоимость по сравнению с бытовым оборудованием.
+								p В-третьих в хороших профессиональных гидромассажных ваннах должна быть предусмотрена возможность полной дезинфекции внутренней системы водопровода для предотвращения передачи какой-либо кожной инфекции от пациента к пациенту. Это связано с тем, что профессиональные ванны используются многими людьми в отличие от бытовых, которые эксплуатируются дома в одной семье.
+							.slider_news_block
+								h3 Другие новости
+									a(href="") Все новости
+								div.slider_news(uk-height-match="target: > div > div > div > div > div > h4" )
+									div.item
+										.uk-card.uk-card-default.uk-position-relative.uk-box-shadow-hover-large
+											a(href="").uk-position-cover
+											.uk-card-body.uk-padding-small
+												span 21 марта 2018г
+												h4.uk-card-title Опыт профессиональной подготовки персонала в индустрии гостеприимства
+											.uk-card-media-bottom.image.uk-cover-container
+												img(src='img/jpg/news2.jpg', alt='', uk-cover)
+											
+									div.item
+										.uk-card.uk-card-default.uk-position-relative.uk-box-shadow-hover-large
+											a(href="").uk-position-cover
+											.uk-card-body.uk-padding-small
+												span 21 марта 2018г
+												h4.uk-card-title Опыт профессиональной подготовки персонала в индустрии гостеприимства
+											.uk-card-media-bottom.image.uk-cover-container
+												img(src='img/jpg/news2.jpg', alt='', uk-cover)
+											
+									div.item
+										.uk-card.uk-card-default.uk-position-relative.uk-box-shadow-hover-large
+											a(href="").uk-position-cover
+											.uk-card-body.uk-padding-small
+												span 21 марта 2018г
+												h4.uk-card-title Опыт профессиональной
+											.uk-card-media-bottom.image.uk-cover-container
+												img(src='img/jpg/news2.jpg', alt='', uk-cover)
+												
+									
+			//- Твой код тут
+			include ../components/footer.pug
+		include assets/_scripts.pug

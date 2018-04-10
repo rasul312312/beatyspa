@@ -1,0 +1,52 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		.uk-offcanvas-content
+			include ../components/header.pug
+			section.banner-top(class="uk-background-cover uk-text-center uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/jpg/rev.jpg);")
+				div
+					ul.uk-breadcrumb
+						li
+							a(href='') название страницы 
+						li
+							a(href='') название страницы
+						li
+							span название страницы
+					h1 Отзывы клиентов
+			section.license
+				.uk-container
+					.uk-placeholder
+						p Для чего нам нужны правила в таком волшебном месте, как SPA? Формулируются они для того, чтобы обеспечить максимальный комфорт и результативность. Примем как аксиому, что все сотрудники SPA руководствуются в своей работе специально разработанными нормами SPA-этикета. И помня, что «магия SPA» – это процесс двусторонний, рассмотрим основные «права и обязанности» клиентов.
+					.uk-grid(uk-grid class="uk-child-width-1-4@m uk-child-width-1-2@s")
+						div
+							.item
+								img(src="img/jpg/lic.jpg", alt="")
+						div
+							.item
+								img(src="img/jpg/lic.jpg", alt="")
+						div
+							.item
+								img(src="img/jpg/lic.jpg", alt="")
+						div
+							.item
+								img(src="img/jpg/lic.jpg", alt="")
+						div
+							.item
+								img(src="img/jpg/lic.jpg", alt="")
+						div
+							.item
+								img(src="img/jpg/lic.jpg", alt="")
+						div
+							.item
+								img(src="img/jpg/lic.jpg", alt="")
+						div
+							.item
+								img(src="img/jpg/lic.jpg", alt="")
+								
+			//- Твой код тут 
+			include ../components/footer.pug
+		include assets/_scripts.pug
