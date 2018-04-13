@@ -14,8 +14,14 @@
     <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <style type="text/css">
+      @font-face{font-family:AvenirNextCyr-Regular;src:url(../fonts/AvenirNextCyr-Regular.ttf);src:url(../fonts/AvenirNextCyr-Regular.eot);src:url(../fonts/AvenirNextCyr-Regular.woff)}@font-face{font-family:AvenirNextCyr-Medium;src:url(../fonts/AvenirNextCyr-Medium.ttf);src:url(../fonts/AvenirNextCyr-Medium.eot);src:url(../fonts/AvenirNextCyr-Medium.woff)}@font-face{font-family:AvenirNextCyr-Demi;src:url(../fonts/AvenirNextCyr-Demi.ttf);src:url(../fonts/AvenirNextCyr-Demi.eot);src:url(../fonts/AvenirNextCyr-Demi.woff)}body,h1,h4,h5,h6{font-family:AvenirNextCyr-Regular}header{z-index:4;position:absolute;top:0;right:0;left:0;padding:20px 0}header nav .uk-navbar-nav li.logo{margin-right:30px;margin-left:0}header nav .uk-navbar-nav .button{padding:10px 0;margin-left:50px;margin-right:0}header nav .uk-navbar-nav .call-back{margin:0}header nav .uk-navbar-nav .call-back a{text-transform:uppercase;text-decoration:none;height:30px;padding:0 20px;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;margin:5px 0 0;background-color:#2a2d45;border-color:#2a2d45;color:#fff;font-size:12px;font-family:AvenirNextCyr-Medium;border-radius:2px}header nav .uk-navbar-nav li{margin:0 20px}header nav .uk-navbar-nav li a{color:#fff;font-size:16px}header nav .uk-navbar-nav li a span{display:-ms-inline-flexbox;display:inline-flex;margin:0 3px}header nav .uk-navbar-nav li.uk-active a{color:#fff}section.banner-top{position:relative;padding:130px 0 200px}section.banner-top:before{position:absolute;top:0;bottom:0;right:0;left:0;content:"";background:rgba(42,45,69,.7);z-index:1;display:-ms-flexbox;display:flex}section.banner-top a{color:#fff!important}section.banner-top span{color:#fff!important;border-bottom:1px solid #fff}section.banner-top .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column):before{margin:0 10px}section.banner-top .uk-breadcrumb{margin-bottom:10px}section.banner-top>div{z-index:2;position:relative}section.banner-top>div h1{color:#fff;z-index:2;margin:0}section.banner-top>div span{color:#fff}section.banner-top>div a{background-color:transparent!important;text-decoration:none;border:1px solid transparent}section.revius{padding:100px 0}section.revius .item{border-radius:5px;padding:30px 60px}section.revius .image{width:150px;height:150px;overflow:hidden;border-radius:50%;box-shadow:0 15px 57px -18px rgba(42,45,69,.62);margin:20px auto}section.revius .text{text-align:center}section.revius .text h6{color:#a7a7a7;margin:0}section.revius .text h4{font-size:24px;font-family:AvenirNextCyr-Demi;margin:10px 0}section.revius .text p{background-image:url(../img/png/com.png);background-repeat:no-repeat;background-position:top;padding-top:40px}@media screen and (max-width:960px){body{margin-top:80px}header{background:rgba(0,0,0,.8);padding:0}}@media screen and (max-width:640px){header nav .uk-navbar-nav li{margin:0}section.banner-top .uk-breadcrumb{-ms-flex-pack:center;justify-content:center}}
+    </style>
+    <link rel="preload" href="css/libs.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/libs.min.css"></noscript>
+    <link rel="preload" href="css/style.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+    <script>!function(u){"use strict";var e=function(e,t,n){var r,o=u.document,a=o.createElement("link");if(t)r=t;else{var l=(o.body||o.getElementsByTagName("head")[0]).childNodes;r=l[l.length-1]}var i=o.styleSheets;a.rel="stylesheet",a.href=e,a.media="only x",function e(t){if(o.body)return t();setTimeout(function(){e(t)})}(function(){r.parentNode.insertBefore(a,t?r:r.nextSibling)});var d=function(e){for(var t=a.href,n=i.length;n--;)if(i[n].href===t)return e();setTimeout(function(){d(e)})};function s(){a.addEventListener&&a.removeEventListener("load",s),a.media=n||"all"}return a.addEventListener&&a.addEventListener("load",s),(a.onloadcssdefined=d)(s),a};"undefined"!=typeof exports?exports.loadCSS=e:u.loadCSS=e}("undefined"!=typeof global?global:this),function(r){if(r.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return r.document.createElement("link").relList.supports("preload")}catch(e){return!1}},e.poly=function(){for(var e=r.document.getElementsByTagName("link"),t=0;t<e.length;t++){var n=e[t];"preload"===n.rel&&"style"===n.getAttribute("as")&&(r.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var t=r.setInterval(e.poly,300);r.addEventListener&&r.addEventListener("load",function(){e.poly(),r.clearInterval(t)}),r.attachEvent&&r.attachEvent("onload",function(){r.clearInterval(t)})}}}(this);</script>
     <link rel="shortcut icon" href="img/favicons/64x64.png" type="image/png">
     <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
     <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
@@ -37,7 +43,7 @@
             </div>
             <div class="uk-navbar-right">
               <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#toggle-header" uk-toggle><span uk-icon="icon: menu"></span><span>меню</span></a></li>
+                <li class="uk-active"><a href="#toggle-header" uk-toggle=""><span uk-icon="icon: menu"></span><span>меню</span></a></li>
                 <li class="uk-visible@l"><a href="#">О SPA центре</a></li>
                 <li class="uk-visible@l"><a href="#">Услуги</a></li>
                 <li class="uk-visible@l"><a href="#">spa сертификаты</a></li>
@@ -97,10 +103,10 @@
       </section>
       <section class="revius">
         <div class="uk-container">
-          <div class="uk-grid uk-child-width-1-2@m" uk-grid>
+          <div class="uk-grid uk-child-width-1-2@m" uk-grid="">
             <div>
               <div class="item uk-box-shadow-small uk-box-shadow-hover-large">
-                <div class="image uk-cover-container"><img src="img/png/human.png" uk-cover alt=""></div>
+                <div class="image uk-cover-container"><img src="img/png/human.png" uk-cover="" alt=""></div>
                 <div class="text">
                   <h6>Фотомодель,Инстастар</h6>
                   <h4>Айжана Асемова</h4>
@@ -110,7 +116,7 @@
             </div>
             <div>
               <div class="item uk-box-shadow-small uk-box-shadow-hover-large">
-                <div class="image uk-cover-container"><img src="img/png/human.png" uk-cover alt=""></div>
+                <div class="image uk-cover-container"><img src="img/png/human.png" uk-cover="" alt=""></div>
                 <div class="text">
                   <h6>Фотомодель,Инстастар</h6>
                   <h4>Айжана Асемова</h4>
@@ -120,7 +126,7 @@
             </div>
             <div>
               <div class="item uk-box-shadow-small uk-box-shadow-hover-large">
-                <div class="image uk-cover-container"><img src="img/png/human.png" uk-cover alt=""></div>
+                <div class="image uk-cover-container"><img src="img/png/human.png" uk-cover="" alt=""></div>
                 <div class="text">
                   <h6>Фотомодель,Инстастар</h6>
                   <h4>Айжана Асемова</h4>
@@ -154,7 +160,7 @@
             </div>
             <div class="uk-margin uk-text-center uk-margin-auto">
               <label>
-                <input class="uk-checkbox" type="checkbox" checked=""><span class="uk-margin-small-left">Я согласен на обработку персональных данных</span>
+                <input class="uk-checkbox" type="checkbox" checked><span class="uk-margin-small-left">Я согласен на обработку персональных данных</span>
               </label>
             </div>
             <div class="uk-text-center uk-margin">
@@ -168,7 +174,7 @@
       </section>
       <footer>
         <div class="uk-container">
-          <div class="uk-grid  uk-child-width-1-4@l uk-child-width-1-2@s" uk-grid>
+          <div class="uk-grid  uk-child-width-1-4@l uk-child-width-1-2@s" uk-grid="">
             <div>
               <h5>О SPA центре</h5>
               <ul>

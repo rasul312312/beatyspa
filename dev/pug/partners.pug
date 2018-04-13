@@ -1,0 +1,46 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		.uk-offcanvas-content
+			include ../components/header.pug
+			section.banner-top(class="uk-background-cover uk-text-center uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/jpg/part.jpg);")
+				div
+					ul.uk-breadcrumb
+						li
+							a(href='') название страницы 
+						li
+							a(href='') название страницы
+						li
+							span название страницы
+					h1 Наши партнеры
+			section.partners
+				.uk-container
+					.uk-grid(uk-grid class="uk-child-width-1-4@m uk-child-width-1-2@s")
+						div
+							.item.uk-box-shadow-small.uk-box-shadow-hover-large
+								.image.uk-cover-container
+									img(src="img/png/l1.png", alt="")
+						div
+							.item.uk-box-shadow-small.uk-box-shadow-hover-large
+								.image.uk-cover-container
+									img(src="img/png/l1.png", alt="")
+						div
+							.item.uk-box-shadow-small.uk-box-shadow-hover-large
+								.image.uk-cover-container
+									img(src="img/png/l1.png", alt="")
+						div
+							.item.uk-box-shadow-small.uk-box-shadow-hover-large
+								.image.uk-cover-container
+									img(src="img/png/l1.png", alt="")
+						div
+							.item.uk-box-shadow-small.uk-box-shadow-hover-large
+								.image.uk-cover-container
+									img(src="img/png/l1.png", alt="")
+									
+						
+			include ../components/footer.pug
+		include assets/_scripts.pug

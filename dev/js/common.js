@@ -2,6 +2,7 @@ $(document).ready(function () {
     var SliderFor = $('.slider-for');
     var SliderNav = $('.slider-nav');
     var SliderNews = $('.slider_news');
+    var InformationSlider = $('.infromation_slider');
     var PrinciplesSlider = $('.principles-slider');
     var PhoneUs = $('.phone_us');
     var GalleryContent = $('.gallery-content');
@@ -79,6 +80,36 @@ $(document).ready(function () {
             responsive: [
                 {
                     breakpoint: 960,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    }
+
+    if (InformationSlider !== undefined && InformationSlider !== null) {
+        InformationSlider.slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            speed: 900,
+            nextArrow: '<span class="arrow-right uk-box-shadow-hover-large" uk-icon="icon: arrow-right" id="arrow-right"></span>',
+            prevArrow: ' <span class="arrow-left uk-box-shadow-hover-large" uk-icon="icon: arrow-left" id="arrow-left"></span>',
+            centerMode: false,
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 960,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 640,
                     settings: {
                       slidesToShow: 1,
                       slidesToScroll: 1

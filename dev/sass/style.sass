@@ -925,17 +925,17 @@ section.bootick
                 &:hover
                     background-color: $blueh
                     border-color: $blueh
-    .see-more
-        a
-            display: inline-flex
-            align-items: center
-            transition: 0.5s
-            &:hover
-                background-color: $blue
-                border-color: $blue
-                color: #ffffff
-        span.icon
-            margin-right: 5px
+.see-more
+    a
+        display: inline-flex
+        align-items: center
+        transition: 0.5s
+        &:hover
+            background-color: $blue
+            border-color: $blue
+            color: #ffffff
+    span.icon
+        margin-right: 5px
 section.license
     padding: 100px 0
     .item
@@ -1057,4 +1057,157 @@ section.principles
             font-family: "AvenirNextCyr-Demi"
         p
             margin: 0
+section.revius
+    padding: 100px 0
+    .item
+        border-radius: 5px
+        padding: 30px 60px
+    .image
+        width: 150px
+        height: 150px
+        overflow: hidden
+        border-radius: 50%
+        box-shadow: 0 15px 57px -18px rgba(42,45,69,.62)
+        margin: 20px auto
+    .text
+        text-align: center
+        
+        h6
+            color: #a7a7a7
+            margin: 0
+        h4
+            font-size: 24px
+            font-family: "AvenirNextCyr-Demi"
+            margin: 10px 0
+        p
+            background-image: url(../img/png/com.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            padding-top: 40px;
+section.partners
+    padding: 100px 0
+    .item
+        padding: 20px
+        .image
+            height: 150px
+            align-items: center
+            display: flex
+            img
+                width: 100%
+section.information-block
+    .infromation_slider
+        padding: 0 60px
+        .item
+            outline: none !important
+            border: 1px dashed #ffffff
+            margin: 0 20px
+            padding: 30px 20px
+            border-radius: 5px
+            transition: 0.3s
+            &:hover
+                background: rgba(154, 154, 154, 0.38)
+        .image
+            height: 50px
+            img
+                height: 100%
+                margin: 0 auto
+        .text
+            margin-top: 20px
+            h6
+                font-family: "AvenirNextCyr-Regular"
+                color: #ffffff
+                font-size: 16px
+                display: flex
+                align-items: center
+                justify-content: center
+    .arrow-left
+        position: absolute
+        left: 1%
+        top: 50%
+        z-index: 10
+        width: 50px
+        height: 50px
+        background: #ffffff
+        color: #000 !important
+        line-height: 48px
+        text-align: center
+        border-radius: 50%
+        cursor: pointer
+        transition: 0.3s
+        transform: translateY(-50%)
+        &:hover
+            transform: scale(1.2) translateY(-50%)
+    .arrow-right
+        position: absolute
+        right: 1%
+        top: 50%
+        z-index: 10
+        width: 50px
+        height: 50px
+        background: #ffffff
+        color: #000 !important
+        line-height: 48px
+        text-align: center
+        border-radius: 50%
+        cursor: pointer
+        transition: 0.3s
+        transform: translateY(-50%)
+        &:hover
+            transform: scale(1.2) translateY(-50%)
+section.publick
+    padding: 100px 0
+    h3.title
+        font-family: "AvenirNextCyr-Demi"
+        font-size: 36px !important
+        color: $blue
+        margin: 20px 0
+    .left-side
+        
+        span
+            font-size: 18px
+            font-family: "AvenirNextCyr-Demi"
+            color: $blue
+        h3
+            font-size: 24px
+            font-family: "AvenirNextCyr-Demi"
+            color: $blue
+            margin: 20px 0
+        p
+            font-size: 14px
+        .uk-button
+            text-transform: none
+            &:hover
+                background-color: $blue
+                border-color: $blue
+                color: #ffffff
+        .pagination
+            a
+                display: inline-flex
+                width: 25px
+                color: #7a7d84
+                justify-content: center
+                border: 1px solid #e5e6e7
+                padding: 5px
+                margin-right: 10px
+                border-radius: 50%
+                text-decoration: none
+                transition: 0.3s
+                &:hover
+                    border: 1px solid #7a7d84
+            a.active
+                border-color: #7a7d84
+    .right-side
+        span
+            font-size: 11px
+        h5
+            margin: 5px 0
+            font-size: 13px
+            font-family: "AvenirNextCyr-Demi"
+            color: $blue
+            text-decoration: underline
+        .item
+            padding: 5px
+            transition: 0.3s
+            &:hover
+                background-color: #e5e5e5
 @import 'assets/media'
