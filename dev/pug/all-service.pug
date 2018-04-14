@@ -1,0 +1,64 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		.uk-offcanvas-content
+			include ../components/header.pug
+			section.banner-top(class="uk-background-cover uk-text-center uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/jpg/all-ser.jpg);")
+				div
+					ul.uk-breadcrumb
+						li
+							a(href='') название страницы 
+						li
+							a(href='') название страницы
+						li
+							span название страницы
+					h1 Все услуги
+			section.step
+				.uk-grid(class="uk-child-width-1-5@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-collapse" uk-height-match="target: > div > .item > .title" uk-grid)
+					div
+						.item
+							span 01
+							.image-wraper.uk-cover-container
+								img(src="img/jpg/l1.jpg", alt="", uk-cover)
+							.title.uk-flex-middle.uk-flex
+								h3 Диагностика и консультации
+							a(href="").uk-button.uk-button-default Подробнее
+					div
+						.item
+							span 02
+							.image-wraper.uk-cover-container
+								img(src="img/jpg/l2.jpg", alt="", uk-cover)
+							.title.uk-flex-middle.uk-flex
+								h3 Косметология и эстетическая медицина
+							a(href="").uk-button.uk-button-default Подробнее
+					div
+						.item
+							span 03
+							.image-wraper.uk-cover-container
+								img(src="img/jpg/l3.jpg", alt="", uk-cover)
+							.title.uk-flex-middle.uk-flex
+								h3 SPA терапия
+							a(href="").uk-button.uk-button-default Подробнее
+					div
+						.item
+							span 04
+							.image-wraper.uk-cover-container
+								img(src="img/jpg/l4.jpg", alt="", uk-cover)
+							.title.uk-flex-middle.uk-flex
+								h3 Банный SPA
+							a(href="").uk-button.uk-button-default Подробнее
+					div
+						.item
+							span 05
+							.image-wraper.uk-cover-container
+								img(src="img/jpg/l5.jpg", alt="", uk-cover)
+							.title.uk-flex-middle.uk-flex
+								h3 Арт и Бьюти студия
+							a(href="").uk-button.uk-button-default Подробнее
+			//- Твой код тут 
+			include ../components/footer.pug
+		include assets/_scripts.pug

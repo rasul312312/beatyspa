@@ -1526,6 +1526,108 @@ section.publick {
     section.publick .right-side .item:hover {
       background-color: #e5e5e5; }
 
+section.gift-certificates {
+  padding: 100px 0; }
+  section.gift-certificates h3 {
+    font-family: "AvenirNextCyr-Demi";
+    font-size: 36px;
+    color: #2a2d45;
+    margin: 20px 0 30px 0;
+    text-align: center; }
+  section.gift-certificates .gift-certificates-slider .uk-position-relative {
+    padding: 20px; }
+  section.gift-certificates .gift-certificates-slider .price {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #7a7d84;
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #ffffff; }
+  section.gift-certificates .gift-certificates-slider .image {
+    height: 170px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+  section.gift-certificates .gift-certificates-slider .text {
+    padding: 20px; }
+    section.gift-certificates .gift-certificates-slider .text span {
+      font-size: 14px;
+      color: #707070; }
+    section.gift-certificates .gift-certificates-slider .text h4 {
+      font-size: 21px;
+      margin: 10px 0 20px 0;
+      color: #000000; }
+    section.gift-certificates .gift-certificates-slider .text a {
+      text-transform: none; }
+
+section.service {
+  padding: 100px 0; }
+  section.service .left-side .image {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  section.service .right-side ul {
+    padding: 0;
+    margin: 0 0 30px 0; }
+    section.service .right-side ul li {
+      margin-bottom: 20px;
+      list-style: none;
+      padding-left: 40px; }
+      section.service .right-side ul li h5 {
+        margin: 0;
+        font-size: 18px;
+        font-family: "AvenirNextCyr-Demi";
+        color: #000000; }
+    section.service .right-side ul li:nth-child(1) {
+      background-image: url(../img/png/clock.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 20px; }
+    section.service .right-side ul li:nth-child(2) {
+      background-image: url(../img/png/coin.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 20px; }
+  section.service .border-bottom {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 30px;
+    margin-bottom: 30px; }
+
+section.other-step h2 {
+  font-family: "AvenirNextCyr-Demi";
+  font-size: 36px;
+  color: #2a2d45;
+  margin: 20px 0 30px 0;
+  text-align: center; }
+
+section.etiket {
+  padding: 100px 0; }
+  section.etiket h5 {
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0; }
+  section.etiket .item {
+    background-image: url(../img/png/check.png);
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-position: left 10px; }
+
 @media screen and (max-width: 1600px) {
   .uk-position-small[class*=uk-position-center-left], .uk-position-small[class*=uk-position-center-right] {
     margin: 0;

@@ -1,0 +1,131 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		.uk-offcanvas-content
+			include ../components/header.pug
+			section.banner-top(class="uk-background-cover uk-text-left " style="background-image: url(img/jpg/spa-sert.jpg);")
+				div.uk-container
+					ul.uk-breadcrumb
+						li
+							a(href='') название страницы 
+						li
+							a(href='') название страницы
+						li
+							span название страницы
+					.uk-grid.uk-margin-xlarge-top(uk-grid class="uk-child-width-1-2@m")
+						div
+							h1 Спа сертификаты
+						div.uk-text-center(class="uk-text-right@m")
+							.uk-margin
+								div.uk-margin-small-bottom
+									span Отдел продаж
+								div
+									b +996 (700) 312 312 - Татьяна
+							.uk-margin
+								a(href="").uk-button.uk-button-default Получить консультацию
+					
+			section.gift-certificates
+				.uk-container
+					.uk-text-center
+						h3 Подарочные сертификаты
+					.gift-certificates-slider
+						.uk-position-relative.uk-visible-toggle(uk-slider='')
+							ul.uk-slider-items.uk-grid(class='uk-child-width-1-3@m uk-child-width-1-2@s' uk-height-match="target: > li > .text > h4")
+								li
+									.uk-position-relative
+										.uk-panel.image.uk-cover-container
+											img(src='img/jpg/ser1.jpg', alt='', uk-cover)
+										.price
+											span Цена: <br> 2000 сом
+									.text
+										span Подарочный сертификат
+										h4 На косметологию и эстетическая медицину
+										a(href="").uk-button.uk-button-default Узнать больше
+								li
+									.uk-position-relative
+										.uk-panel.image.uk-cover-container
+											img(src='img/jpg/ser2.jpg', alt='', uk-cover)
+										.price
+											span Цена: <br> 2000 сом
+									.text
+										span Подарочный сертификат
+										h4 SPA терапия
+										a(href="").uk-button.uk-button-default Узнать больше
+								li
+									.uk-position-relative
+										.uk-panel.image.uk-cover-container
+											img(src='img/jpg/ser3.jpg', alt='', uk-cover)
+										.price
+											span Цена: <br> 2000 сом
+									.text
+										span Подарочный сертификат
+										h4 Диагностика и консультации
+										a(href="").uk-button.uk-button-default Узнать больше
+								li
+									.uk-position-relative
+										.uk-panel.image.uk-cover-container
+											img(src='img/jpg/ser1.jpg', alt='', uk-cover)
+										.price
+											span Цена: <br> 2000 сом
+									.text
+										span Подарочный сертификат
+										h4 На косметологию и эстетическая медицину
+										a(href="").uk-button.uk-button-default Узнать больше
+							a.uk-position-center-left.uk-position-small(href='#', uk-slidenav-previous='', uk-slider-item='previous')
+							a.uk-position-center-right.uk-position-small(href='#', uk-slidenav-next='', uk-slider-item='next')
+					.uk-text-center
+							h3 Подарочные карты 
+					.gift-certificates-slider
+						.uk-position-relative.uk-visible-toggle(uk-slider='')
+							ul.uk-slider-items.uk-grid(class='uk-child-width-1-3@m uk-child-width-1-2@s' uk-height-match="target: > li > .text > h4")
+								li
+									.uk-position-relative
+										.uk-panel.image.uk-cover-container
+											img(src='img/jpg/card1.jpg', alt='', uk-cover)
+										.price
+											span Цена: <br> 2000 сом
+									.text
+										span Подарочная карты
+										h4 Карта на абонимент на 3 месяца со скидкой 10%
+										a(href="").uk-button.uk-button-default Узнать больше
+								li
+									.uk-position-relative
+										.uk-panel.image.uk-cover-container
+											img(src='img/jpg/card2.jpg', alt='', uk-cover)
+										.price
+											span Цена: <br> 2000 сом
+									.text
+										span Подарочная карты
+										h4 Карта для нее
+										a(href="").uk-button.uk-button-default Узнать больше
+								li
+									.uk-position-relative
+										.uk-panel.image.uk-cover-container
+											img(src='img/jpg/card3.jpg', alt='', uk-cover)
+										.price
+											span Цена: <br> 2000 сом
+									.text
+										span Подарочная карты
+										h4 Карта для него
+										a(href="").uk-button.uk-button-default Узнать больше
+								li
+									.uk-position-relative
+										.uk-panel.image.uk-cover-container
+											img(src='img/jpg/card2.jpg', alt='', uk-cover)
+										.price
+											span Цена: <br> 2000 сом
+									.text
+										span Подарочная карты
+										h4 Карта для него
+										a(href="").uk-button.uk-button-default Узнать больше
+							a.uk-position-center-left.uk-position-small(href='#', uk-slidenav-previous='', uk-slider-item='previous')
+							a.uk-position-center-right.uk-position-small(href='#', uk-slidenav-next='', uk-slider-item='next')
+				
+					
+			//- Твой код тут 
+			include ../components/footer.pug
+		include assets/_scripts.pug

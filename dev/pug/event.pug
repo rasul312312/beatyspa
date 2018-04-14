@@ -1,0 +1,86 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		.uk-offcanvas-content
+			include ../components/header.pug
+			section.banner-top(class="uk-background-cover uk-text-center uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/jpg/event.jpg);")
+				div
+					ul.uk-breadcrumb
+						li
+							a(href='') название страницы 
+						li
+							a(href='') название страницы
+						li
+							span название страницы
+					h1 События и Новости
+			section.publick
+				.uk-container
+					.uk-grid(uk-grid)
+						div(class="uk-width-expand@m left-side")
+							div
+								h3.title События
+								.uk-card.uk-card-default.uk-grid-collapse.uk-margin(class='uk-child-width-1-2@s', uk-grid='')
+									.uk-card-media-left.uk-cover-container
+										img(src='img/jpg/pre1.jpg', alt='', uk-cover='')
+										canvas(width='', height='')
+									div
+										.uk-card-body
+											span 21 марта 2018г
+											h3.uk-card-title Презентация новейшего аппарата
+											p 17 ноября 2017 года прошла презентация первого в России современного аппарата "Лазерная капельница", не имеющая аналогов!
+											a(href="").uk-button.uk-button-default Узнать больше
+								.uk-card.uk-card-default.uk-grid-collapse.uk-margin(class='uk-child-width-1-2@s', uk-grid='')
+									.uk-card-media-left.uk-cover-container
+										img(src='img/jpg/gal.jpg', alt='', uk-cover='')
+										canvas(width='', height='')
+									div
+										.uk-card-body
+											span 21 марта 2018г
+											h3.uk-card-title Презентация новейшего аппарата
+											p 17 ноября 2017 года прошла презентация первого в России современного аппарата "Лазерная капельница", не имеющая аналогов!
+											p 17 ноября 2017 года прошла презентация первого в России современного аппарата "Лазерная капельница", не имеющая аналогов!
+											a(href="").uk-button.uk-button-default Узнать больше
+								.pagination
+									a(href="").active 1
+									a(href="") 2
+									a(href="") 3
+						div(class="uk-width-1-4@m right-side")
+							div
+								h3.title Новости
+								.item.uk-position-relative.uk-margin
+									a(href="").uk-position-cover
+									.uk-flex-top.uk-grid-small(uk-grid='')
+										div(class='uk-width-2-3')
+											span 21 марта 2018 г
+											h5 Опыт профессиональной подготовки персонала в индустрии гостеприимства
+								.item.uk-position-relative.uk-margin
+									a(href="").uk-position-cover
+									.uk-flex-top.uk-grid-small(uk-grid='')
+										div(class='uk-width-2-3')
+											span 21 марта 2018 г
+											h5 Опыт профессиональной подготовки персонала в индустрии гостеприимства
+								.item.uk-position-relative.uk-margin
+									a(href="").uk-position-cover
+									.uk-flex-top.uk-grid-small(uk-grid='')
+										div(class='uk-width-2-3')
+											span 21 марта 2018 г
+											h5 Опыт профессиональной подготовки персонала в индустрии гостеприимства
+								.item.uk-position-relative.uk-margin
+									a(href="").uk-position-cover
+									.uk-flex-top.uk-grid-small(uk-grid='')
+										div(class='uk-width-2-3')
+											span 21 марта 2018 г
+											h5 Опыт профессиональной подготовки персонала в индустрии гостеприимства
+								.uk-margin-medium.uk-text-center.see-more
+									a(href="").uk-button.uk-button-default
+										span.icon(uk-icon='icon: refresh')
+										span Загрузить еще
+							
+					
+			//- Твой код тут 
+			include ../components/footer.pug
+		include assets/_scripts.pug

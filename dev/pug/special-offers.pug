@@ -1,0 +1,48 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		.uk-offcanvas-content
+			include ../components/header.pug
+			section.banner-top.information-block(class="uk-background-cover uk-text-center " style="background-image: url(img/jpg/off.jpg);")
+				div.uk-container
+					ul.uk-breadcrumb
+						li
+							a(href='') название страницы 
+						li
+							a(href='') название страницы
+						li
+							span название страницы
+					.uk-margin-large(class="uk-width-2-3@m uk-margin-auto")
+						h1 Спецпредложения
+						p Мы распологаем ряд бонусных систем и клубных карт для удобства клиентов их получение, а так тут будет текст с кратким описанием
+					
+					.infromation_slider(uk-height-match="target: > div > div > div > div > h6")
+						div.item
+							.image
+								img(src="img/png/i1.png", alt="")
+							.text
+								h6 Клубные карты Beauty SPA
+						div.item
+							.image
+								img(src="img/png/i2.png", alt="")
+							.text
+								h6 Бонусная система
+						div.item
+							.image
+								img(src="img/png/i3.png", alt="")
+							.text
+								h6 SPA –party и SPA –вечеринки 
+						div.item
+							.image
+								img(src="img/png/i4.png", alt="")
+							.text
+								h6 Cсезонные предложения 
+						
+
+			//- Твой код тут 
+			include ../components/footer.pug
+		include assets/_scripts.pug
